@@ -236,9 +236,7 @@ var rowJson = {
   "textBaseline": "alphabetic",
   "textDirection": "ltr",
   "verticalDirection": "down",
-  "children": [
-   
-  ]
+  "children": []
 };
 
 var columnJson = {
@@ -251,8 +249,7 @@ var columnJson = {
   "textDirection": "ltr",
   "verticalDirection": "down",
   "click_event": "selected",
-  "children": [
-  ]
+  "children": []
 };
 
 var assetImageJson = {
@@ -995,4 +992,247 @@ var appBarJson = {
   },
   "leading": null,
   "actions": []
+};
+
+var loginJson = {
+  "type": "Scaffold",
+  "body": {
+    "type": "Column",
+    "crossAxisAlignment": "center",
+    "mainAxisAlignment": "start",
+    "mainAxisSize": "max",
+    "isActive": false,
+    "textBaseline": "alphabetic",
+    "textDirection": "ltr",
+    "verticalDirection": "down",
+    "click_event": "selected",
+    "children": [
+      {
+        "type": "Expanded",
+        "flex": 1,
+        "child": {
+          "type": "Container",
+          "alignment": null,
+          "padding": null,
+          "color": null,
+          "margin": null,
+          "constraints": {
+            "minWidth": 0.0,
+            "maxWidth": 9999999999.0,
+            "minHeight": 500.0,
+            "maxHeight": 500.0
+          },
+          "child": {
+            "type": "Padding",
+            "padding": "50.0,50.0,50.0,50.0",
+            "child": {
+              "type": "Column",
+              "crossAxisAlignment": "center",
+              "mainAxisAlignment": "center",
+              "mainAxisSize": "max",
+              "click_event": "selected",
+              "isActive": false,
+              "textBaseline": "ideographic",
+              "textDirection": "ltr",
+              "verticalDirection": "down",
+              "children": [
+                {
+                  "type": "AssetImage",
+                  "name": "assets/images/login.png",
+                  "semanticLabel": null,
+                  "excludeFromSemantics": false,
+                  "width": 300.0,
+                  "height": 300.0,
+                  "color": null,
+                  "colorBlendMode": null,
+                  "fit": "cover",
+                  "alignment": "center",
+                  "repeat": "noRepeat",
+                  "centerSlice": null,
+                  "matchTextDirection": false,
+                  "gaplessPlayback": false,
+                  "filterQuality": "low"
+                },
+                {
+                  "type": "Padding",
+                  "padding": "16.0,16.0,16.0,16.0",
+                  "child": {
+                    "type": "Row",
+                    "crossAxisAlignment": "center",
+                    "mainAxisAlignment": "start",
+                    "mainAxisSize": "max",
+                    "textBaseline": "ideographic",
+                    "textDirection": "ltr",
+                    "verticalDirection": "down",
+                    "click_event": "selected",
+                    "isActive": false,
+                    "children": [
+                      {
+                        "type": "Text",
+                        "data": "Header One",
+                        "textAlign": "start",
+                        "overflow": null,
+                        "maxLines": null,
+                        "semanticsLabel": null,
+                        "softWrap": null,
+                        "textDirection": "ltr",
+                        "style": {
+                          "color": "ffffffff",
+                          "debugLabel": null,
+                          "decoration": "none",
+                          "fontSize": 24.0,
+                          "fontFamily": "Outfit",
+                          "fontStyle": "normal",
+                          "fontWeight": "w500"
+                        },
+                        "textScaleFactor": null
+                      }
+                    ]
+                  }
+                },
+                {
+                  "type": "Padding",
+                  "padding": "5.0,5.0,5.0,5.0",
+                  "child": {
+                    "type": "Row",
+                    "crossAxisAlignment": "center",
+                    "mainAxisAlignment": "start",
+                    "mainAxisSize": "max",
+                    "textBaseline": "ideographic",
+                    "textDirection": "ltr",
+                    "click_event": "selected",
+                    "isActive": false,
+                    "verticalDirection": "down",
+                    "children": [
+                      {
+                        "type": "Expanded",
+                        "flex": 1,
+                        "child": {
+                          "type": "Text",
+                          "data":
+                              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+                          "textAlign": "start",
+                          "overflow": null,
+                          "maxLines": null,
+                          "semanticsLabel": null,
+                          "softWrap": null,
+                          "textDirection": "ltr",
+                          "style": {
+                            "color": "ff95a1ac",
+                            "debugLabel": null,
+                            "decoration": "none",
+                            "fontSize": 14.0,
+                            "fontFamily": "Outfit",
+                            "fontStyle": "normal",
+                            "fontWeight": "w400"
+                          },
+                          "textScaleFactor": null
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "type": "Padding",
+        "padding": "10.0,10.0,10.0,10.0",
+        "child": {
+          "type": "ElevatedButton",
+          "foregroundColor": null,
+          "backgroundColor": null,
+          "overlayColor": null,
+          "shadowColor": null,
+          "elevation": null,
+          "padding": null,
+          "textStyle": null,
+          "child": {
+            "type": "Text",
+            "data": "Login",
+            "textAlign": "start",
+            "overflow": null,
+            "maxLines": null,
+            "semanticsLabel": null,
+            "softWrap": null,
+            "textDirection": "ltr",
+            "style": {
+              "color": "ffffffff",
+              "debugLabel": null,
+              "decoration": "none",
+              "fontSize": 16.0,
+              "fontFamily": "Outfit",
+              "fontStyle": "normal",
+              "fontWeight": "w400"
+            },
+            "textScaleFactor": null
+          }
+        }
+      },
+      {
+        "type": "Padding",
+        "padding": "10.0,10.0,10.0,10.0",
+        "child": {
+          "type": "ElevatedButton",
+          "foregroundColor": null,
+          "backgroundColor": null,
+          "overlayColor": null,
+          "shadowColor": null,
+          "elevation": null,
+          "padding": null,
+          "textStyle": null,
+          "child": {
+            "type": "Text",
+            "data": "Register",
+            "textAlign": "start",
+            "overflow": null,
+            "maxLines": null,
+            "semanticsLabel": null,
+            "softWrap": null,
+            "textDirection": "ltr",
+            "style": {
+              "color": "ffffffff",
+              "debugLabel": null,
+              "decoration": "none",
+              "fontSize": 16.0,
+              "fontFamily": "Outfit",
+              "fontStyle": "normal",
+              "fontWeight": "w400"
+            },
+            "textScaleFactor": null
+          }
+        }
+      }
+    ]
+  },
+  "appBar": {
+    "type": "AppBar",
+    "title": {
+      "type": "Text",
+      "data": "Welcome",
+      "textAlign": "start",
+      "overflow": null,
+      "maxLines": null,
+      "semanticsLabel": null,
+      "softWrap": null,
+      "textDirection": "ltr",
+      "style": {
+        "color": "ffffffff",
+        "debugLabel": null,
+        "decoration": "none",
+        "fontSize": 20.0,
+        "fontFamily": "Outfit",
+        "fontStyle": "normal",
+        "fontWeight": "w500"
+      },
+      "textScaleFactor": null
+    },
+    "leading": null,
+    "actions": [],
+    "centerTitle": false,
+    "backgroundColor": "ff1a1f24"
+  },
+  "backgroundColor": "ff1a1f24"
 };

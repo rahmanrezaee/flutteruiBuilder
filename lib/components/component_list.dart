@@ -593,11 +593,60 @@ class _ComponentListState extends State<ComponentList>
                       ),
                     ],
                   )
-                : const Expanded(
-                    child: Center(
-                      child: Text("no Component"),
-                    ),
-                  ),
+                : StaggeredGrid.count(
+                    crossAxisCount: 2,
+                    children: [
+                      Draggable<String>(
+                        data: "login",
+                        feedback: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15)),
+                          padding: const EdgeInsets.all(15),
+                          margin: const EdgeInsets.all(5),
+                          child: Column(
+                            children: [
+                              Image.asset(
+                                "assets/images/text.png",
+                                width: 40,
+                              ),
+                              Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 4),
+                                child: Text('Login Component',
+                                    style: FluentTheme.of(context)
+                                        .typography
+                                        .bodyStrong),
+                              ),
+                            ],
+                          ),
+                        ),
+                        child: Container(
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15)),
+                          padding: const EdgeInsets.all(15),
+                          margin: const EdgeInsets.all(5),
+                          child: Column(
+                            children: [
+                              Image.asset(
+                                "assets/images/text.png",
+                                width: 40,
+                              ),
+                              Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 4),
+                                child: Text('login',
+                                    style: FluentTheme.of(context)
+                                        .typography
+                                        .bodyStrong),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
           ],
         ),
       ),

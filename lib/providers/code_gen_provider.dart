@@ -33,6 +33,7 @@ class CodeGenProvider with ChangeNotifier {
   void setChild(String data) {
     print(selectedWidget.toString() + "new widget" + data.toString());
 
+    isComponent(data);
     if (selectedWidget!['type'] == "Scaffold") {
       selectedWidget!['body'] = getJsonWidget(data);
     }
@@ -69,6 +70,10 @@ class CodeGenProvider with ChangeNotifier {
         Map newChildJson = listviewJson;
         newChildJson["id"] = _uuid.v1();
         return listviewJson;
+      case "login":
+        Map newChildJson = loginJson;
+        newChildJson["id"] = _uuid.v1();
+        return loginJson;
       default:
         return {};
     }
@@ -157,6 +162,18 @@ class CodeGenProvider with ChangeNotifier {
       return getChildernt(widgetsJson['children']);
     } else {
       return [];
+    }
+  }
+
+  void isComponent(String data) {
+    switch (data) {
+      case "login":
+        Map newChildJson = loginJson;
+        newChildJson["id"] = _uuid.v1();
+        sourceCode = loginJson;
+        break;
+      default:
+        break;
     }
   }
 }
