@@ -122,25 +122,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final appTheme = context.watch<AppTheme>();
     return NavigationView(
-      appBar: NavigationAppBar(
-        title: () {
-          if (kIsWeb) return const Text(appTitle);
-          return const DragToMoveArea(
-            child: Align(
-              alignment: AlignmentDirectional.centerStart,
-              child: Text(appTitle),
-            ),
-          );
-        }(),
-        actions: kIsWeb
-            ? null
-            : DragToMoveArea(
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [Spacer(), WindowButtons()],
-                ),
-              ),
-      ),
       pane: NavigationPane(
         selected: index,
         onChanged: (i) => setState(() => index = i),
