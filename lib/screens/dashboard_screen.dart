@@ -23,8 +23,8 @@ class _DashboardPageState extends State<DashboardPage> {
         children: [
           DisplayBoard(),
           Positioned(left: 0, top: 0, child: ComponentList()),
-          // if (appTheme.showPropertySection)
-          Positioned(right: 0, top: 0, child: WidgetTreeComponent())
+          if (appTheme.showPropertySection)
+            Positioned(right: 0, top: 0, child: WidgetTreeComponent())
         ],
       ),
     );

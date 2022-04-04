@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_builder/constants/widget_json.dart';
 import 'package:flutter_ui_builder/providers/code_gen_provider.dart';
+import 'package:flutter_ui_builder/screens/widget_building_page.dart';
 import 'package:provider/provider.dart';
 
 import '../core/dynamic_widget.dart';
@@ -32,8 +33,8 @@ class DesignPage extends StatelessWidget {
           }, builder: (BuildContext context, List<String?> candidateData,
               List rejectedData) {
             return snapshot.hasData
-                ? _exportor = DynamicWidgetJsonExportor(
-                    child: snapshot.data,
+                ? CustomePage(
+                    child: snapshot.data!,
                   )
                 : Text("Loading...");
           });

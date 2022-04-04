@@ -43,7 +43,7 @@ void main() async {
     await WindowManager.instance.ensureInitialized();
     windowManager.waitUntilReadyToShow().then((_) async {
       await windowManager.setTitleBarStyle('hidden');
-      await windowManager.setFullScreen(true);
+      await windowManager.setFullScreen(false);
       await windowManager.center();
       await windowManager.show();
       await windowManager.setSkipTaskbar(true);
@@ -122,6 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     final appTheme = context.watch<AppTheme>();
     return NavigationView(
+      
       pane: NavigationPane(
         selected: index,
         onChanged: (i) => setState(() => index = i),
